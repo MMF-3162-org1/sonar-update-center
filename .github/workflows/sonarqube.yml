@@ -41,6 +41,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: git
+        run: |
+          git --version
+          git remote -v
+          
       - name: Analyze with SonarQube
 
         # You can pin the exact commit or the version.
